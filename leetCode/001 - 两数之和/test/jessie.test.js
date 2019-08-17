@@ -1,4 +1,4 @@
-const { twoSumA: twoSum } = require('./../jessie')
+const { methods3: twoSum } = require('./../jessie')
 
 test('twoSum([5, 75, 25], 100) => [1, 2]', () => {
   expect(twoSum([5, 75, 25], 100)).toEqual([1, 2])

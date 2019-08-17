@@ -22,6 +22,7 @@ module.exports = {
     "import/prefer-default-export": 0,
     "no-unused-vars": 0,
     "valid-jsdoc": 0,
-    "object-curly-spacing": ["error", "always"]
+    "object-curly-spacing": ["error", "always"],
+    'space-infix-ops': 2,
   },
 };
