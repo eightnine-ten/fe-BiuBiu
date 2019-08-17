@@ -1,0 +1,30 @@
+{
+  "name": "fe-biubiu",
+  "version": "1.0.0",
+  "description": "biu fe !!!",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eightnine-ten/fe-BiuBiu.git"
+  },
+  "keywords": [
+    "fe"
+  ],
+  "author": "eightnine-ten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eightnine-ten/fe-BiuBiu/issues"
+  },
+  "homepage": "https://github.com/eightnine-ten/fe-BiuBiu#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "jest": "^24.9.0",
+    "vuepress": "^1.0.3"
+  }
+}
