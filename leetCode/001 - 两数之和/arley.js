@@ -26,6 +26,18 @@ const twoSumA = function(nums, target) {
   }
 }
 
+const twoSumB = function(nums, target) {
+  const obj = {}
+  for (let i = 0; i <= nums.length; i++) {
+    if (typeof(obj[nums[i]]) !== 'undefined') {
+      return [obj[nums[i]], i]
+    }
+    obj[target - nums[i]] = i
+  }
+  return []
+}
+
 module.exports = {
   twoSumA,
+  twoSumB,
 }
