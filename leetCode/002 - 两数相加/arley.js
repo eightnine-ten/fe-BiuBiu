@@ -14,6 +14,7 @@
     著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+const { getListNode, list2array, towBigNumberSum } = require('./util')
 
 /**
  * @param {ListNode} l1
@@ -21,7 +22,12 @@
  * @return {ListNode}
  */
 const addTwoNumbers = function(l1, l2) {
-
+  const number1 = list2array(l1).reverse().join('')
+  const number2 = list2array(l2).reverse().join('')
+  const sum = towBigNumberSum(number1, number2)
+  return getListNode(sum)
 }
 
-
+module.exports = {
+  addTwoNumbers,
+}

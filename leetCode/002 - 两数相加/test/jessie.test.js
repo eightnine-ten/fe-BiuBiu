@@ -1,20 +1,20 @@
 const {
   addTwoNumbers: addTwoNumbers,
-  nodeArray: nodeArray,
+  getListNode: getListNode,
   array2list: array2list } = require('./../jessie')
 
-test('addTwoNumbers((2 -> 4 -> 3) + (5 -> 6 -> 4)) => (7 -> 0 -> 8)', () => {
-  expect(
-      addTwoNumbers(
-          array2list(nodeArray(243)),
-          array2list(nodeArray(564)))
-  ).toMatchObject(array2list(nodeArray(807)))
+test('243 + 564 = 807', () => {
+  expect(addTwoNumbers(getListNode('243'), getListNode('564')))
+      .toMatchObject(getListNode('807'))
 })
 
-test('addTwoNumbers((1 -> 8) + (0)) => (1 -> 8)', () => {
-  expect(
-      addTwoNumbers(
-          array2list(nodeArray(18)),
-          array2list(nodeArray(0)))
-  ).toMatchObject(array2list(nodeArray(18)))
+test('18 + 0 = 18', () => {
+  expect(addTwoNumbers(getListNode('18'), getListNode('0')))
+      .toMatchObject(getListNode('18'))
+})
+
+test('1000000000000000000000000000001 + 564 = 1000000000000000000000000000565', () => {
+  expect(addTwoNumbers(getListNode('1000000000000000000000000000001'),
+      getListNode('564')))
+      .toMatchObject(getListNode('1000000000000000000000000000565'))
 })

@@ -23,8 +23,8 @@ module.exports = {
     "no-unused-vars": 0,
     "valid-jsdoc": 0,
     "object-curly-spacing": ["error", "always"],
-    "space-infix-ops": ["error", {"int32Hint": false}] ,
-    "require-jsdoc":0,
-    "max-len":0
+    "space-infix-ops": ["error", {"int32Hint": false}],
+    "max-len": 0,
+    "require-jsdoc":0
   },
 };
