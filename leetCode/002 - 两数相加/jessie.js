@@ -15,11 +15,6 @@
  */
 
 
-const getListNode = (number) => {
-
-}
-getListNode()
-
 const addTwoNumbers = function(l1, l2) {
 
 }
