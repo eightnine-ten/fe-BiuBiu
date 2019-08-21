@@ -24,7 +24,13 @@ const longestPalindrome = function(s) {
     return s
   }
 
-  const dp = new Array(n).fill(new Array(n).fill(undefined))
+  // const dp = new Array(n).fill(new Array(n).fill(false))
+
+  const dp = new Array(n)
+  for (let i = 0; i < n; i++) {
+    dp[i] = new Array(false)
+  }
+
   let res = ''
   for (let i = 0; i < n; i++) {
     for (let j = 0; j <= i; j ++) {
@@ -39,7 +45,6 @@ const longestPalindrome = function(s) {
   return res
 }
 
-console.log(longestPalindrome('babad'))
 
 module.exports = {
   longestPalindrome,
