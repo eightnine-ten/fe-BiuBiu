@@ -29,7 +29,6 @@ const methods2 = function(nums, target) {
 const methods3 = function(nums, target) {
   let result = []
   nums.map((element, index) => {
-    // eslint-disable-next-line max-len
     if (nums.indexOf(target - element) > -1 && nums.indexOf(target - element) !== index) {
       result = [index, nums.indexOf(target - element)].sort((a, b)=>a > b)
     }
