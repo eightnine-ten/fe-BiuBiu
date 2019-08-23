@@ -25,6 +25,7 @@ module.exports = {
     "object-curly-spacing": ["error", "always"],
     "space-infix-ops": ["error", {"int32Hint": false}],
     "max-len": 0,
-    "require-jsdoc":0
+    "require-jsdoc":0,
+    "linebreak-style": 0
   },
 };
