@@ -8,14 +8,13 @@
 const compare = (a, b)=>{
   const front = '' + a + b
   const behind = '' + b + a
-  console.log('TCL: compare -> front', front)
-  console.log('TCL: compare -> behind', behind)
   return front - behind
 }
 const printMinNumber = (numberArr)=>{
   if (!numberArr || numberArr.length === 0) {
     return ''
   }
-  console.log(numberArr.sort(compare).join(''))
+  numberArr.sort(compare).join('')
 }
-printMinNumber([3, 32, 321])
+
+console.log(printMinNumber([3, 32, 321]))
