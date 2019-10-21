@@ -36,8 +36,32 @@ const methods3 = function(nums, target) {
   return result
 }
 
+const methods4 = function(nums, target) {
+  const map = {}
+  let result = null
+  nums.forEach((item, index) => {
+    if (map[item] !== undefined) {
+      if (item * 2 === target) {
+        result = [map[item], index]
+      }
+    } else {
+      map[item] = index
+    }
+  })
+  if (result) {
+    return result
+  }
+  nums.some((item, index) => {
+    if (item * 2 !== target && map[target - item] !== undefined) {
+      result = [index, map[target - item]].sort((a, b)=> a > b)
+    }
+  })
+  return result
+}
+
 module.exports = {
   methods1,
   methods2,
   methods3,
+  methods4,
 }
